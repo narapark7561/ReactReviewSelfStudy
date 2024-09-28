@@ -1,7 +1,9 @@
+"use client";
+
 import { useState } from "react";
 
 export default function Counter() {
-  const [counter, setCounter] = useState(0); //setCouter가 함수다!
+  const [counter, setCounter] = useState(0);
 
   const incrementCounter = () => {
     if (counter < 10) {
@@ -19,13 +21,26 @@ export default function Counter() {
     setCounter(0);
   };
 
+  let buttonStyles =
+    "bg-blue-400 hover:bg-blue-700  active:bg-yellow-300 text-white rounded py-2 px-4 mt-5";
+  if (counter >= 10 || counter == 0) {
+    buttonStyles = "bg-grey-500  text-white rounded py-2 px-4 mt-5";
+  }
   return (
-    <div>
-      <h2>Basic Counter</h2>
-      <p>Count: {counter}</p>
-      <button onClick={incrementCounter}> Increment </button>
-      <button onClick={decrementCounter}> Decrement </button>
-      <button onClick={resetCounter}> Reset </button>
+    <div className="bg-slate-300 ps-5">
+      <h2 className="text-2xl">Basic Counter</h2>
+      <p className="text-lg">Count: {counter}</p>
+      <button onClick={incrementCounter} className={buttonStyles}>
+        Increment
+      </button>
+      <p></p>
+      <button onClick={decrementCounter} className={buttonStyles}>
+        Decrement
+      </button>
+      <p></p>
+      <button onClick={resetCounter} className={buttonStyles}>
+        Reset
+      </button>
     </div>
   );
 }
