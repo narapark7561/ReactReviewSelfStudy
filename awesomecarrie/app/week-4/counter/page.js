@@ -1,11 +1,9 @@
-import { useState } from "react";
+import Counter from "./counter";
 
-export default function Counter() {
-  const [counter, setCounter] = useState(0); //setCouter가 함수다!
-
-  const incrementCounter = () => {
-    if (counter < 10) {
-      setCounter;
-    }
-  };
+export default function CounterPage() {
+  return (
+    <main>
+      <Counter />
+    </main>
+  );
 }
