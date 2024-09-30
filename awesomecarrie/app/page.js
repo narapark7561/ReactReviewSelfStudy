@@ -19,7 +19,13 @@ export default function Home() {
           <Link href="./week-3/props">Week 3 - Props</Link>
         </li>
         <li>
+          <Link href="./week-4/functions">Week 4 - Functions</Link>
+        </li>
+        <li>
           <Link href="./week-4/counter">Week 4 - Counter</Link>
+        </li>
+        <li>
+          <Link href="./week-4/counter-props">Week 4 - Counter Props</Link>
         </li>
       </ul>
     </main>
