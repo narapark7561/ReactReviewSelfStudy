@@ -24,7 +24,7 @@ export default function Counter() {
   let buttonStyles =
     "bg-blue-400 hover:bg-blue-700  active:bg-yellow-300 text-white rounded py-2 px-4 mt-5";
   if (counter >= 10 || counter == 0) {
-    buttonStyles = "bg-grey-500  text-white rounded py-2 px-4 mt-5";
+    buttonStyles = "bg-red-200  text-white rounded py-2 px-4 mt-5";
   }
   return (
     <div className="bg-slate-300 ps-5">
