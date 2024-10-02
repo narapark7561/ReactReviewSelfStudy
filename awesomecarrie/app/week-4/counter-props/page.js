@@ -25,9 +25,7 @@ export default function CounterPropPage() {
         resetCounterFunction={resetCounter}
       />
       <article>
-        <p>
-          this is random text dhalfhdalfadfkadlhfahdfhalhdflahlfdshaljfaldjflas
-        </p>
+        <p>this is random text</p>
       </article>
       <CounterDisplay currentCount={counter} />
     </main>
