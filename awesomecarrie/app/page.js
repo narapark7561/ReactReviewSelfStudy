@@ -27,6 +27,9 @@ export default function Home() {
         <li>
           <Link href="./week-4/counter-props">Week 4 - Counter Props</Link>
         </li>
+        <li>
+          <Link href="./week-5/">Week 5 - Managed Form</Link>
+        </li>
       </ul>
     </main>
   );
