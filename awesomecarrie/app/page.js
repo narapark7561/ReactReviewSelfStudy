@@ -30,6 +30,9 @@ export default function Home() {
         <li>
           <Link href="./week-5/">Week 5 - Managed Form</Link>
         </li>
+        <li>
+          <Link href="./week-7/">Week 7 - Managing State</Link>
+        </li>
       </ul>
     </main>
   );
