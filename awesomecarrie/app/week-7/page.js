@@ -19,8 +19,17 @@ export default function AdoptionPage() {
 
   return (
     <main>
+      {formOpen && (
+        <DogForm addNewDogFunc={addNewDog} closeFormFunc={closeForm} />
+      )}
       <h1>Dogs for Adoption</h1>
-      <button>Open Dog Adoption Form</button>
+      <button
+        type="button"
+        className="bg-blue-300 text-white rounded"
+        onClick={openForm}
+      >
+        Open Dog Adoption From
+      </button>
       <DogList dogArray={dogList} />
     </main>
   );
