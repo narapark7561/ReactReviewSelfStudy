@@ -1,5 +1,5 @@
-import Link from "next/link";
-import MyFristComponent from "./_components/my-first-component";
+import Link from 'next/link';
+import MyFristComponent from './_components/my-first-component';
 
 export default function Home() {
   return (
@@ -32,6 +32,9 @@ export default function Home() {
         </li>
         <li>
           <Link href="./week-7/">Week 7 - Managing State</Link>
+        </li>
+        <li>
+          <Link href="./week-8/">Week 8 - Fetching Data</Link>
         </li>
       </ul>
     </main>
